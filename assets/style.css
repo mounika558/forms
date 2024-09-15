@@ -3,13 +3,14 @@ body{
     margin:auto;
     align-items:center;
     justify-content: space-around;
-  
     display:grid;
 }
 .container{
     background-color: rgb(51, 7, 62);
     padding:20px;
     color:white;
+    border-radius:10px;
+    width:100%;
 }
 input[type='text'],input[type='text'] ,input[type='date'] ,input[type='text'] ,input[type='email']  ,select{
 width:100%;
@@ -25,5 +26,5 @@ label{
 
 button[type="submit"]:hover{
     background-color: rgb(188, 151, 222);
-border-radius:10px ;
+border-radius:0px ;
 }

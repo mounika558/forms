@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <main>
+    <h1>Registration Form</h1>
+<div class="container">
+    <form method="get">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" required >
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname">
+        <br><br>
+        <label for="DOB">Date of birth:</label>
+        <input type="date" id="DOB" required>
+        <br><br>
+        <label for="phonenum"  >Phone Number:</label>
+        <input type="text" id="phonenum" maxlength="10" pattern="{0-9}" required>
+        <br><br>
+        <label for="mail">Enter Mail ID:</label>
+        <input type="email" id="mail" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+ <input type="radio" id="gender" name="gender" >Female
+ <input type="radio" id="gender" name="gender">Male
+ <br><br>
+ <label for="dept" >Select your department:</label>
+ <select id="dept" required>
+    <option value="IT">IT</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="AERO">AERO</option>
+    <option value="CIVIL">CIVIL</option>
+    <option value="EIE">EIE</option>
+ </select><br><br>
+<button type="Submit" value="Submit"> Submit</button>
+    </form>
+</div>
+</main>
+</body>
+</html>

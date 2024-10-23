@@ -42,9 +42,9 @@ document.getElementById('submitbtn').onclick=function(){
 
     event.preventDefault(); 
 
-    
+
     const firstname=document.getElementById('fname').value;
-   const lastname= document.getElementById('lname').value;
+    const lastname= document.getElementById('lname').value;
     const birthdate=document.getElementById('DOB').value;
     const phonenum=document.getElementById('phonenum').value;
     const email=document.getElementById('mail').value;
@@ -72,6 +72,17 @@ if(!dept){
     alert('please select your deptartment!!');
     return;
 }
-alert("Form submitted");
-// document.getElementById('disp').innerHTML="Form submitted successfully!!";
+// alert("Form submitted");
+ document.getElementById("disp").innerHTML="Form submitted successfully!!";
+}
+document.getElementById("resetbtn").onclick=function(){
+    document.getElementById('fname').innerHTML=" ";
+     document.getElementById('lname').innerHTML=" ";
+    document.getElementById('DOB').innerHTML= " ";
+    document.getElementById('phonenum').innerHTML= " ";
+    document.getElementById('mail').innerHTML= " ";
+    document.getElementById('gender').innerHTML=" ";
+    document.getElementById('dept').innerHTML=" ";
+
+    document.getElementById("disp").innerHTML=" ";
 }

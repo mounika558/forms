@@ -28,3 +28,8 @@ button[type="submit"]:hover{
     background-color: rgb(188, 151, 222);
 border-radius:0px ;
 }
+#disp{
+    text-align:center;
+    font-size:30px;
+    color:rgb(148, 94, 12);
+}

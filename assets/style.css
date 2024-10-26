@@ -52,24 +52,24 @@ button[type="reset"]:hover{
 }
 @media screen and (max-width:1025px){
     .form-title{
-        font-size:100px;
+        font-size:30px;
     }
     .container{
         border-radius:10px;
-        width:100%;
+        width:70%;
         height:200%;
-        margin:50px;
+        margin:auto;
     }
 }
 @media screen and (max-width:769px){
     .form-title{
-        font-size:50px;
+        font-size:30px;
     }
     .container{
         border-radius:10px;
-        width:100%;
+        width:70%;
         height:200%;
-        margin:50px;
+        margin:auto;
     }
 }
 @media screen and (max-width:481px){
@@ -80,7 +80,7 @@ button[type="reset"]:hover{
         border-radius:10px;
         width:75%;
         height:200%;
-        margin:50px;
+        margin:auto;
     }
 }
 @media screen and (max-width:320px){
@@ -91,6 +91,6 @@ button[type="reset"]:hover{
         border-radius:10px;
         width:50%;
         height:200%;
-        margin:50px;
+        margin:auto;
     }
 }

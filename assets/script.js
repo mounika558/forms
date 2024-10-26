@@ -1,42 +1,3 @@
-// // assets/script.js
-// document.addEventListener('DOMContentLoaded', function() {
-//     const form = document.querySelector('form');
-
-//     form.addEventListener('submit', function(event) {
-//         event.preventDefault(); // Prevent the form from submitting
-
-//         const fname = document.getElementById('fname').value;
-//         const lname = document.getElementById('lname').value;
-//         const dob = document.getElementById('DOB').value;
-//         const phone = document.getElementById('phonenum').value;
-//         const mail = document.getElementById('mail').value;
-//         const gender = document.querySelector('input[name="gender"]:checked');
-//         const dept = document.getElementById('dept').value;
-
-//         if (!gender) {
-//             alert("Please select your gender.");
-//             return;
-//         }
-
-//         // Perform basic validation
-//         if (phone.length !== 10 || isNaN(phone)) {
-//             alert("Please enter a valid 10-digit phone number.");
-//             return;
-//         }
-
-//         // Display an alert with the submitted data
-//         alert(`Form Submitted! \n
-//         Name: ${fname} ${lname}\n
-//         Date of Birth: ${dob}\n
-//         Phone Number: ${phone}\n
-//         Email: ${mail}\n
-//         Gender: ${gender.value}\n
-//         Department: ${dept}`);
-
-//         // Optionally submit the form after validation
-//         // form.submit();
-//     });
-// });
 
 document.getElementById('submitbtn').onclick=function(){
 
@@ -72,6 +33,10 @@ if(!dept){
     alert('please select your deptartment!!');
     return;
 }
+if(!birthdate){
+    alert("please select the date of birth");
+    return;
+}
 // alert("Form submitted");
  document.getElementById("disp").innerHTML="Form submitted successfully!!";
 }
@@ -82,7 +47,7 @@ document.getElementById("resetbtn").onclick=function(){
     document.getElementById('phonenum').innerHTML= " ";
     document.getElementById('mail').innerHTML= " ";
     document.getElementById('gender').innerHTML=" ";
-    document.getElementById('dept').innerHTML=" ";
+
 
     document.getElementById("disp").innerHTML=" ";
 }
